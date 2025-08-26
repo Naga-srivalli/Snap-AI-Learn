@@ -1416,7 +1416,7 @@
 
     // --------------- Backend: Gemini API (SAME logic + retries). Key is read from localStorage if not hardcoded) ---------------
     async function callGeminiAPI(prompt, imageData = null, customPayload = null, isJson = false) {
-      let apiKey = "AIzaSyBfvxXzQDwDvPikKBSR54wE0l369ij9Lyo";
+      let apiKey = "";
       if (!apiKey) apiKey = localStorage.getItem('gemini_api_key') || "";
 
       if (!apiKey) {
@@ -1530,3 +1530,4 @@
   </script>
 </body>
 </html>
+
